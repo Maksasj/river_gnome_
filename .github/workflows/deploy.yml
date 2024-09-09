@@ -28,10 +28,11 @@ jobs:
       - name: Install dependencies
         run: npm i
 
-      - name: Build
+      - name: Build project
         run: npm run build
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v3
         with:
-          folder: dist
+          name: production-files
+          path: ./dist
