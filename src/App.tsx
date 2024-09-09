@@ -25,6 +25,13 @@ function App() {
             <div className="account_name">@river_gnome_</div>
           </div>
         </a>
+
+        <a href="https://www.tiktok.com/@river_gnome_">
+          <div className="social_button" >
+            <div className="social_icon" >TikTok</div>
+            <div className="account_name">@river_gnome_</div>
+          </div>
+        </a>
       </div>
     </>
   )
