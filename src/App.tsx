@@ -2,32 +2,35 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Instagram, Pin, X } from 'lucide-react'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+        <h1 className='account_name'>river_gnome_ 💚</h1>
+        <p className="description">
+          Doing art time to time<br/>
+          Started drawing 2022-10-11<br/>
+          Imagine not doing art in 2024 🤡👺
         </p>
+
+        <a href="https://www.instagram.com/river_gnome_/">
+          <div className="social_button">
+            <Instagram className="social_icon"/> 
+            <div className="account_name">@river_gnome_</div>
+          </div>
+        </a>
+
+        <a href="https://x.com/river_gnome_">
+          <div className="social_button" >
+            <X className="social_icon"/>
+            <div className="account_name">@river_gnome_</div>
+          </div>
+        </a>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
